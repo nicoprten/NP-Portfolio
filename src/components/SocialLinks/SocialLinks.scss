@@ -12,6 +12,8 @@
         padding: 1em;
     }
     @include u.mobile{
+        position: inherit;
+        justify-content: flex-end;
     }
     li{
         a{

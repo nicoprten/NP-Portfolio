@@ -10,7 +10,7 @@
     border-left: 10px solid white;
     animation: fadeInAnimation 0.5s linear;
     @include u.mobile{
-        margin-top: 5vh;
+        margin: 5vh 0 15vh 0;
         flex-wrap: wrap;
         align-items: flex-start;
         width: 350px;
