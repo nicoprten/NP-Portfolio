@@ -13,7 +13,7 @@ export default function Menu({handleToggle, menuActive}){
             </div>
             <div className={`menu-container ${menuActive}`}>
                 <h2>Projects</h2>
-                <ul className='projects-container animate__animated animate__backInRight'>
+                <ul className='projects-container'>
                     {projects && projects.map((p, i) => {
                         return(
                             <li key={i}>

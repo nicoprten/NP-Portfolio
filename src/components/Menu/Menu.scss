@@ -20,24 +20,25 @@
 }
 .menu-container{
     animation: fadeInAnimation .4s linear;
-    position: absolute;
-    top: 20vh;
-    right: 0;
     color: u.$white;
+    margin: 0 auto;
     @include u.tablet{
-        top: 25vh;
+        width: 70%;
     }
     @include u.mobile{
-        position: relative;
-        top: 0;
         width: 80%;
         margin: 0 auto;
     }
     h2{
         border-top: 5px solid u.$white;
         font-family: 'KollektifBold';
-        margin: .5em 0 .5em 1em;
+        margin: .5em 0 .5em 2em;
         padding-top: .5em;
+        animation: fadeInRightBig;
+        animation-duration: .5s;
+        @include u.tablet{
+            margin-left: 4em;
+        }
     }
     .projects-container{
         color: u.$black;
@@ -47,9 +48,9 @@
         flex-direction: column;
         height: 350px;
         overflow-y: auto;
-        @include u.mobile{
-            align-items: center;
-        }
+        align-items: center;
+        animation: backInRight;
+        animation-duration: 1s;
         li{
             padding: 1em;
             h3{
