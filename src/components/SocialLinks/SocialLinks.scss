@@ -1,0 +1,22 @@
+@use './../../styles/utilities.scss' as u;
+
+.social-container{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    padding: 10px;
+    li{
+        a{
+            text-decoration: none;
+            color: u.$white;
+            transition: 1s;
+            &:hover{
+                color: u.$blue;
+                transition: .3s;
+            }
+        }
+    }
+}

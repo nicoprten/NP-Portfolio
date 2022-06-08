@@ -1,0 +1,16 @@
+@use './../../styles/utilities.scss' as u;
+
+#menu-container{
+    color: u.$white;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    svg{
+        transition: ease-out .25s;
+        &:hover{
+            cursor: pointer;
+            color: u.$blue;
+            transition: ease-out .25s;
+        }
+    }
+}
