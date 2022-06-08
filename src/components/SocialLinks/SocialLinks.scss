@@ -7,7 +7,7 @@
     position: absolute;
     bottom: 0;
     right: 20px;
-    padding: 1em 0;
+    padding: 1em;
     li{
         a{
             text-decoration: none;
@@ -16,6 +16,11 @@
             &:hover{
                 color: u.$blue;
                 transition: .3s;
+            }
+            svg{
+                @include u.mobile{
+                    font-size: 40px;
+                }
             }
         }
     }

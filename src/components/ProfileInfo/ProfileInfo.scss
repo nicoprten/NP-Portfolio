@@ -3,9 +3,9 @@
 .container-info{
     display: flex;
     align-items: flex-end;
+    padding: 0 1em;
     @include u.mobile{
         flex-wrap: wrap;
-        padding: 0 1em;
     }
     .profile-info{
         display: flex;
@@ -31,6 +31,8 @@
     .container-button{
         border-bottom: 10px solid u.$white;
         padding: 0 0 .8em 2em;
+        animation: fadeInRightBig;
+        animation-duration: 1s;
         @include u.mobile{
             padding: 1em 0;
             border: none;

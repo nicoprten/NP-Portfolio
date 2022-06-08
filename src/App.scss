@@ -17,19 +17,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
     background-color: u.$black;
-    overflow: hidden;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     height: 100vh;
     @include u.tablet{
-        width: 90%;
     }
     @include u.mobile{
-        width: 100%;
     }
 }
 .video-bg{
@@ -47,19 +45,27 @@ body{
     top: 200px;
     z-index: -1;
     animation: fadeInAnimation .8s linear;
+    @include u.mobile{
+        display: none;
+    }
 }
 #ball02{
     position: absolute;
     top: 125px;
     z-index: -1;
     animation: fadeInAnimation .8s linear;
+    @include u.mobile{
+        width: 100vw;
+    }
 }
 #ball03{
     position: absolute;
-    // left: 200px;
     bottom: 100px;
     z-index: -1;
     animation: fadeInAnimation .8s linear;
+    @include u.mobile{
+        width: 100vw;
+    }
 }
 #ball04{
     position: absolute;
@@ -67,6 +73,9 @@ body{
     bottom: 30px;
     z-index: -1;
     animation: fadeInAnimation .8s linear;
+    @include u.mobile{
+        display: none;
+    }
 }
 
 .animate__animated.animate__backInRight{

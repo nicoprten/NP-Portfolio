@@ -5,6 +5,7 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
+    padding: 0 1em;
     svg{
         transition: ease-out .25s;
         &:hover{
@@ -26,6 +27,12 @@
     @include u.tablet{
         top: 25vh;
     }
+    @include u.mobile{
+        position: relative;
+        top: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
     h2{
         border-top: 5px solid u.$white;
         font-family: 'KollektifBold';
@@ -41,6 +48,9 @@
         flex-direction: column;
         height: 350px;
         overflow-y: auto;
+        @include u.mobile{
+            align-items: center;
+        }
         li{
             padding: 1em;
             h3{
