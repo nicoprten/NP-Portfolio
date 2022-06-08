@@ -7,7 +7,7 @@ export default function ProfileInfo(){
                 <h1>Nicolás Prtenjaca</h1>
                 <h2>Frontend Developer</h2>
             </div>
-            <div className="container-button animate__animated animate__backInRight">
+            <div className="container-button">
                 <button onClick={() => window.open('./CV-v5-english.pdf')}>DOWNLOAD RESUME</button>
             </div>
         </div>
