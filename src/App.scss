@@ -26,10 +26,12 @@ body{
     position: relative;
     height: 100vh;
     padding: 0 20vw;
+    overflow: hidden;
     @include u.tablet{
         padding: 0;
     }
     @include u.mobile{
+        overflow: inherit;
     }
 }
 .video-bg{
