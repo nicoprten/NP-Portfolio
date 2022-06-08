@@ -4,8 +4,15 @@
     display: flex;
     align-items: flex-end;
     padding: 0 1em;
+    margin-top: 10vh;
+    flex-direction: column;
+    width: 450px;
+    border-left: 10px solid white;
     @include u.mobile{
+        margin-top: 5vh;
         flex-wrap: wrap;
+        align-items: flex-start;
+        width: 350px;
     }
     .profile-info{
         display: flex;
@@ -27,15 +34,28 @@
             border-bottom: 10px solid u.$white;
             padding-bottom: .8em;
         }
+        p{
+            color: u.$white;
+            width: 250px;
+            font-family: 'Kollektif';
+            line-height: 25px;
+            padding: 1em;
+            border-bottom: 5px solid u.$white;
+            span{
+                // border-bottom: 2px solid u.$black;
+                color: u.$black;
+                padding: .3em .2em;
+                background-color: u.$white;
+            }
+        }
     }
     .container-button{
-        border-bottom: 10px solid u.$white;
-        padding: 0 0 .8em 2em;
+        border: none;
+        padding: 1em 0;
         animation: fadeInRightBig;
         animation-duration: 1s;
         @include u.mobile{
-            padding: 1em 0;
-            border: none;
+            
         }
         button{
             background-color: u.$white;

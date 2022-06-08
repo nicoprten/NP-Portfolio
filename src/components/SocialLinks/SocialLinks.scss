@@ -7,7 +7,12 @@
     position: absolute;
     bottom: 0;
     right: 20px;
-    padding: 1em;
+    padding: 0 20vw;
+    @include u.tablet{
+        padding: 1em;
+    }
+    @include u.mobile{
+    }
     li{
         a{
             text-decoration: none;
