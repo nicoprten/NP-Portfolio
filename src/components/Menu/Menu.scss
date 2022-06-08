@@ -23,8 +23,11 @@
     top: 20vh;
     right: 0;
     color: u.$white;
+    @include u.tablet{
+        top: 25vh;
+    }
     h2{
-        border-top: 2px solid u.$white;
+        border-top: 5px solid u.$white;
         font-family: 'KollektifBold';
         margin: .5em 0 .5em 1em;
         padding-top: .5em;

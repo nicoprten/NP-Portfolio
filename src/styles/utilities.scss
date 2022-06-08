@@ -11,3 +11,14 @@ $red: #F05454;
       opacity: 1;
     }
 }
+
+@mixin tablet{
+  @media only screen and (max-width: 760px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media only screen and (max-width: 580px){
+    @content;
+  }
+}

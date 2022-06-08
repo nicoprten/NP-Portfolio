@@ -3,12 +3,18 @@
 .container-info{
     display: flex;
     align-items: flex-end;
+    @include u.mobile{
+        flex-wrap: wrap;
+        padding: 0 1em;
+    }
     .profile-info{
         display: flex;
         flex-direction: column;
         gap: 1em;
-        width: 400px;
         align-items: flex-end;
+        @include u.mobile{
+            align-items: flex-start;
+        }
         h1{
             color: u.$red;
             font-size: 3em;
@@ -25,6 +31,10 @@
     .container-button{
         border-bottom: 10px solid u.$white;
         padding: 0 0 .8em 2em;
+        @include u.mobile{
+            padding: 1em 0;
+            border: none;
+        }
         button{
             background-color: u.$white;
             width: 180px;
