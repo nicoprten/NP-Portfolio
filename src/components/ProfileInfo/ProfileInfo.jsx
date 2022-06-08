@@ -7,7 +7,7 @@ export default function ProfileInfo({profileActive}){
                 <h1>Nicolás Prtenjaca</h1>
                 <h2>Frontend Developer</h2>
             </div>
-            <div className={profileActive === 'inactive' ? 'container-button' : 'container-button animate__animated animate__bounceOutLeft'}>
+            <div className='inactive'>
                 <button onClick={() => window.open('./CV-v5-english.pdf')}>DOWNLOAD RESUME</button>
             </div>
         </div>
