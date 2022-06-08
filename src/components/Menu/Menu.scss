@@ -1,6 +1,6 @@
 @use './../../styles/utilities.scss' as u;
 
-#menu-container{
+#toggle-container{
     color: u.$white;
     display: flex;
     justify-content: flex-end;
@@ -11,6 +11,60 @@
             cursor: pointer;
             color: u.$blue;
             transition: ease-out .25s;
+        }
+    }
+}
+.inactive{
+    display: none;
+}
+.menu-container{
+    animation: fadeInAnimation .4s linear;
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    color: u.$white;
+    h2{
+        border-top: 2px solid u.$white;
+        font-family: 'KollektifBold';
+        margin: .5em 0 .5em 1em;
+        padding-top: .5em;
+    }
+    .projects-container{
+        color: u.$black;
+        background-color: u.$white;
+        border-radius: 0 0 30px 30px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        overflow-y: auto;
+        li{
+            padding: 1em;
+            h3{
+                margin: .5em 0;
+            }
+            .container-code{
+                display: flex;
+                gap: 1em;
+                a{
+                    color: u.$black;
+                    text-decoration: none;
+                    padding: .5em;
+                    border: 2px solid u.$black;
+                    font-family: 'KollektifBold';
+                    // box-shadow: inset 0 0 0 0 u.$black;
+                    transition: ease-out .4s;
+                    width: 100px;
+                    text-align: center;
+                    &:hover{
+                        // box-shadow: inset 100px 0 0 0 u.$black;
+                        color: u.$white;
+                        background-color: u.$black;
+                        border: 2px solid u.$white;
+                        transition: ease-out .4s;
+                    }
+                }
+            }
         }
     }
 }

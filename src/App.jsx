@@ -2,6 +2,7 @@ import ProfileInfo from './components/ProfileInfo/ProfileInfo';
 import SocialLinks from './components/SocialLinks/SocialLinks';
 import Menu from './components/Menu/Menu';
 import style from './App.scss';
+import 'animate.css';
 
 export default function App(){
     return(
