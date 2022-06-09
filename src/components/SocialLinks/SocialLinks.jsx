@@ -10,7 +10,7 @@ export default function SocialLinks(){
         <ul className='social-container'>
             <li><a href='https://www.linkedin.com/in/nicoprten/' target='_blank'>{<LinkedInIcon sx={{fontSize: 50}}/>}</a></li>
             <li><a href='https://github.com/nicoprten' target='_blank'>{<GitHubIcon sx={{fontSize: 50}}/>}</a></li>
-            <li><a href='' target='_blank'>{<EmailIcon sx={{fontSize: 50}}/>}</a></li>
+            <li><a href='mailto:nicoprtenjaca@gmail.com' target='_blank'>{<EmailIcon sx={{fontSize: 50}}/>}</a></li>
             <li><a href='https://twitter.com/nikprten' target='_blank'>{<TwitterIcon sx={{fontSize: 50}}/>}</a></li>
             <li><a href='https://www.instagram.com/designby_np/' target='_blank'>{<InstagramIcon sx={{fontSize: 50}}/>}</a></li>
         </ul>
