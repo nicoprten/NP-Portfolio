@@ -27,7 +27,7 @@
     }
     @include u.mobile{
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 8em auto;
     }
     h2{
         border-top: 5px solid u.$white;
