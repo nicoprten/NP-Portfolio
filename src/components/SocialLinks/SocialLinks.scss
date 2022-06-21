@@ -12,20 +12,27 @@
         padding: 1em;
     }
     @include u.mobile{
-        flex-direction: column;
-        position: absolute;
-        top: 30vh;
-        right: 0;
+        position: inherit;
+        justify-content: center;
+        padding: 0.8em;
+        border: none;
     }
     li{
+        border-bottom: 5px solid u.$white;
+        margin-top: 5px;
+        transition: ease-out .3s;
+        &:hover{
+            margin-top: 0;
+            border-bottom: 10px solid u.$black;
+            transition: ease-out .3s;
+        }
+        @include u.mobile{
+            border: none;
+        }
         a{
             text-decoration: none;
             color: u.$white;
             transition: 1s;
-            &:hover{
-                color: u.$blue;
-                transition: .3s;
-            }
             svg{
                 @include u.mobile{
                     font-size: 30px;

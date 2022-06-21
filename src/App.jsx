@@ -24,9 +24,9 @@ export default function App(){
             <img id='ball02' src='./ball-02.png' alt='ball to animate' />
             <img id='ball03' src='./ball-03.png' alt='ball to animate' />
             <img id='ball04' src='./ball-01.png' alt='ball to animate' />
-            {/* <video className="video-bg" autoplay='true' loop muted>
-                <source src='./bg-fire-03.mp4' />
-            </video> */}
+            <video className="video-bg" autoplay='true' loop muted>
+                <source src='./bg-waves.mp4' />
+            </video>
         </>
     )
 }
