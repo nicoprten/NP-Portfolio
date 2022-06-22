@@ -1,7 +1,7 @@
 @use './../../styles/utilities.scss' as u;
 
 #toggle-container{
-    color: u.$black;
+    color: u.$white;
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
@@ -10,7 +10,7 @@
         transition: ease-out .25s;
         &:hover{
             cursor: pointer;
-            color: u.$white;
+            color: u.$black;
             transition: ease-out .25s;
         }
     }
@@ -69,11 +69,12 @@
                     transition: ease-out .4s;
                     width: 100px;
                     text-align: center;
+                    border: 2px solid u.$white;
                     &:hover{
                         box-shadow: inset 100px 0 0 0 u.$white;
                         color: u.$black;
                         background-color: u.$black;
-                        border: 2px solid u.$white;
+                        // border: 2px solid u.$white;
                         transition: ease-out .4s;
                     }
                 }
