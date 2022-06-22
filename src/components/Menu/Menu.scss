@@ -8,9 +8,10 @@
     padding: 0 1em;
     svg{
         transition: ease-out .25s;
+        border: 2px solid u.$black;
         &:hover{
             cursor: pointer;
-            color: u.$black;
+            border: 2px solid u.$white;
             transition: ease-out .25s;
         }
     }
@@ -20,7 +21,7 @@
 }
 .menu-container{
     animation: fadeInAnimation .4s linear;
-    color: u.$black;
+    color: u.$white;
     margin: 0 auto;
     @include u.tablet{
         width: 70%;
@@ -30,7 +31,7 @@
         margin: 1em auto 8em auto;
     }
     h2{
-        border-top: 5px solid u.$black;
+        border-top: 5px solid u.$white;
         font-family: 'KollektifBold';
         margin: .5em 0 .5em 2em;
         padding-top: .5em;
@@ -49,6 +50,7 @@
         align-items: center;
         animation: backInRight;
         animation-duration: 1s;
+        border: 5px solid u.$white;
         li{
             padding: 1em;
             h3{
