@@ -9,7 +9,7 @@ export default function ProfileInfo({profileActive}){
                 <p><span>STACK:</span> HTML, CSS, SASS, Bootstrap, Tailwind, Material UI, Javascript, JQuery, React, Redux, APIs, NPM, GitHub, Photoshop, Illustrator, AfterEffects, Figma.</p>
             </div>
             <div className='container-button'>
-                <button onClick={() => window.open('./nicolas-prtenjaca.pdf')}>DOWNLOAD RESUME</button>
+                <button onClick={() => window.open('./nicolas-prtenjaca-cv.pdf')}>DOWNLOAD RESUME</button>
             </div>
         </div>
     )
