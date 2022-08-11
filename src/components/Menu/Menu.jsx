@@ -8,8 +8,8 @@ export default function Menu({handleToggle, menuActive}){
     return(
         <>
             <div id='toggle-container'>
-                { menuActive === 'inactive' ? <ListIcon onClick={() => handleToggle()}sx={{fontSize: 50}}/> : 
-                <CloseIcon onClick={() => handleToggle()}sx={{fontSize: 50}}/>}
+                { menuActive === 'inactive' ? <ListIcon onClick={() => handleToggle()} sx={{fontSize: 50}}/> : 
+                <CloseIcon onClick={() => handleToggle()} sx={{fontSize: 50}}/>}
             </div>
             <div className={`menu-container ${menuActive}`}>
                 <h2>Projects</h2>
