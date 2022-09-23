@@ -1,4 +1,4 @@
-import style from './ProfileInfo.scss';
+import './ProfileInfo.scss';
 
 export default function ProfileInfo({profileActive}){
     return(

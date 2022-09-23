@@ -1,10 +1,5 @@
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import { LinkedinLogo, GithubLogo, Envelope, TwitterLogo, InstagramLogo, BehanceLogo } from 'phosphor-react';
-import style from './SocialLinks.scss';
+import './SocialLinks.scss';
 
 export default function SocialLinks(){
     return(
