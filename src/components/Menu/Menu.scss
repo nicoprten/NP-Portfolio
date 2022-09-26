@@ -14,16 +14,17 @@
         display: flex;
         align-items: center;
         background-color: u.$white;
-        padding: .5em .5em .5em 0;
-        border-radius: 5px;
+        padding-right: 1em;
         box-shadow: inset 0 0 0 0 u.$white;
         color: u.$black;
         transition: ease-out .4s;
+        border: 1px solid u.$black;
         @include u.mobile{
             font-size: .75em;
             padding: 0;
         }
         &:hover{
+            border: 1px solid u.$white;
             color: u.$white;
             box-shadow: inset 180px 0 0 0 u.$black;
             cursor: pointer;
@@ -46,6 +47,8 @@
     display: none;
 }
 .menu-container{
+    background-color: u.$black;
+    border: 1px solid u.$red;
     animation: fadeInAnimation .4s linear;
     color: u.$white;
     margin: 0 auto;
@@ -57,7 +60,8 @@
         margin: 1em auto 4em auto;
     }
     h2{
-        border-top: 5px solid u.$white;
+        border-top: 1px solid u.$red;
+        color: u.$red;
         font-family: 'KollektifBold';
         margin: .5em 0 .5em 2em;
         padding-top: .5em;
@@ -71,13 +75,14 @@
         color: u.$white;
         list-style-type: none;
         display: flex;
+        gap: 1em;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         animation: backInRight;
         animation-duration: 1s;
-        height: 75vh;
+        height: 70vh;
         overflow-y: scroll;
         margin: 2em 0;
         &::-webkit-scrollbar{
@@ -88,7 +93,6 @@
             border-radius: 5px;
             border: 2px solid u.$red;
             width: 50%;
-            height: 400px;
             overflow: hidden;
             &:hover .container-code{
                 opacity: 1;
