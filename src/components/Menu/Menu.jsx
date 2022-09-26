@@ -1,4 +1,4 @@
-import CloseIcon from '@mui/icons-material/Close';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import style from './Menu.scss';
 import projects from './../../projects/Projects';
@@ -14,7 +14,11 @@ export default function Menu({handleToggle, menuActive}){
                         <p>PORTFOLIO</p>
                     </div>
                 : 
-                    <CloseIcon onClick={() => handleToggle()} sx={{fontSize: 50}}/>}
+                    <div className='button--portfolio' onClick={() => handleToggle()}>
+                        <p>PROFILE</p>
+                        <ChevronRightIcon sx={{fontSize: 50}}/>
+                    </div>
+                }
             </div>
             <div className={`menu-container ${menuActive}`}>
                 <h2>Projects</h2>
