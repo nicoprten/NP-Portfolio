@@ -1,8 +1,8 @@
 import './ProfileInfo.scss';
 
-export default function ProfileInfo({profileActive}){
+export default function ProfileInfo(){
     return(
-        <div className={`container-info ${profileActive}`}>
+        <div className={`container-info`}>
             <div className="profile-info">
                 <h1>Nicolás Prtenjaca</h1>
                 <h2>Frontend Developer</h2>

@@ -1,24 +1,24 @@
+import { useState } from 'react';
+
 import ProfileInfo from './components/ProfileInfo/ProfileInfo';
 import SocialLinks from './components/SocialLinks/SocialLinks';
 import Menu from './components/Menu/Menu';
-import style from './App.scss';
-import 'animate.css';
-import { useState } from 'react';
+import Projects from './components/Projects/Projects';
 
-export default function App(){
-    const [menuActive, setMenuActive] = useState('inactive');
-    const [profileActive, setProfileActive] = useState('active');
+import './App.scss';
+import 'animate.css';
+
+export default function App(){    
+    const [view, setView] = useState('active');
 
     function handleToggle(){
-        console.log('toggle')
-        menuActive === 'inactive' ? setMenuActive('active') : setMenuActive('inactive');
-        profileActive === 'active' ? setProfileActive('inactive') : setProfileActive('active');
+        view === 'active' ? setView('inactive') : setView('active');
     }
 
     return(
         <>
-            <Menu handleToggle={handleToggle} menuActive={menuActive} />
-            <ProfileInfo profileActive={profileActive} />
+            <Menu handleToggle={handleToggle} view={view} />
+            {view === 'active' ? <ProfileInfo /> : <Projects handleToggle={handleToggle} />} 
             <SocialLinks />
             <img id='ball01' src='./ball-01.png' alt='ball to animate' />
             <img id='ball02' src='./ball-02.png' alt='ball to animate' />
