@@ -18,7 +18,7 @@ export default function App(){
     return(
         <>
             <Menu handleToggle={handleToggle} view={view} />
-            {view === 'active' ? <ProfileInfo /> : <Projects handleToggle={handleToggle} />} 
+            {view === 'active' ? <ProfileInfo /> : <Projects />}
             <SocialLinks />
             <img id='ball01' src='./ball-01.png' alt='ball to animate' />
             <img id='ball02' src='./ball-02.png' alt='ball to animate' />

@@ -5,7 +5,7 @@ import './Projects.scss';
 export default function Projects({ menuActive }){
 
     return(
-        <div className={`menu-container ${menuActive}`}>
+        <div className='projects-big-container'>
             <h2>Projects</h2>
             <ul className='projects-container'>
             {projects && projects.map((p, i) => {
@@ -25,4 +25,3 @@ export default function Projects({ menuActive }){
         </div>
     )
 }
-
