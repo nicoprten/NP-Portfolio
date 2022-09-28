@@ -14,7 +14,7 @@
         padding: 1em;
     }
     @include u.mobile{
-        padding: 0.8em;
+        padding: 0;
         border: none;
         gap: 0.5em;
         position: inherit;

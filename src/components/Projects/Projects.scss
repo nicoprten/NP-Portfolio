@@ -2,7 +2,7 @@
 
 .projects-big-container{
     background-color: u.$black;
-    border: 1px solid u.$red;
+    border: 2px solid u.$red;
     animation: fadeInAnimation .4s linear;
     color: u.$white;
     margin: 0 auto;
@@ -11,13 +11,13 @@
     }
     @include u.mobile{
         width: 80%;
-        margin: 1em auto 4em auto;
+        margin: 1em auto;
     }
     h2{
-        border-top: 1px solid u.$red;
+        border-top: 2px solid u.$red;
         color: u.$red;
         font-family: 'KollektifBold';
-        margin: .5em 0 .5em 2em;
+        margin: .5em 0 .5em 4em;
         padding-top: .5em;
         animation: fadeInRightBig;
         animation-duration: .5s;
@@ -38,7 +38,9 @@
         animation-duration: 1s;
         height: 70vh;
         overflow-y: scroll;
-        margin: 2em 0;
+        @include u.mobile{
+            gap: 0;
+        }
         &::-webkit-scrollbar{
             display: none;
         }
@@ -46,8 +48,13 @@
             position: relative;
             border-radius: 5px;
             border: 2px solid u.$red;
-            width: 50%;
+            width: 45%;
             overflow: hidden;
+            @include u.mobile{
+                width: 100%;
+                border: none;
+                border-radius: 0;
+            }
             &:hover .container-code{
                 opacity: 1;
                 transition: .3s;
@@ -59,6 +66,11 @@
                 padding: .5em;
                 color: u.$red;
                 border-bottom: 2px solid u.$red;
+                @include u.mobile{
+                    border: none;
+                    background-color: u.$red;
+                    color: u.$black;
+                }
             }
             img{
                 width: 100%;
@@ -80,8 +92,9 @@
                     width: 100%;
                     height: fit-content;
                     text-align: center;
-                    margin: 2em 4em 0 4em;
-                    background: u.$black;
+                    margin: 2em 1em 0 1em;
+                    background: u.$white;
+                    color: u.$black;
                     padding: 0.5em;
                     border-radius: 5px;
                 }
