@@ -1,0 +1,124 @@
+@use './../../styles/utilities.scss' as u;
+
+.projects-big-container{
+    background-color: u.$black;
+    border: 2px solid u.$red;
+    animation: fadeInAnimation .4s linear;
+    color: u.$white;
+    margin: 0 auto;
+    @include u.tablet{
+        width: 70%;
+    }
+    @include u.mobile{
+        width: 80%;
+        margin: 1em auto;
+    }
+    h2{
+        border-top: 2px solid u.$red;
+        color: u.$red;
+        font-family: 'KollektifBold';
+        margin: .5em 0 .5em 4em;
+        padding-top: .5em;
+        animation: fadeInRightBig;
+        animation-duration: .5s;
+        @include u.tablet{
+            margin-left: 4em;
+        }
+    }
+    .projects-container{
+        color: u.$white;
+        list-style-type: none;
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        animation: backInRight;
+        animation-duration: 1s;
+        height: 70vh;
+        overflow-y: scroll;
+        @include u.mobile{
+            gap: 0;
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        li{
+            position: relative;
+            border-radius: 5px;
+            border: 2px solid u.$red;
+            width: 45%;
+            overflow: hidden;
+            @include u.mobile{
+                width: 100%;
+                border: none;
+                border-radius: 0;
+            }
+            &:hover .container-code{
+                opacity: 1;
+                transition: .3s;
+            }
+            h3{
+                font-family: 'Oswald';
+                text-align: center;
+                background-color: u.$black;
+                padding: .5em;
+                color: u.$red;
+                border-bottom: 2px solid u.$red;
+                @include u.mobile{
+                    border: none;
+                    background-color: u.$red;
+                    color: u.$black;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .container-code{
+                transition: .3s;
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(10, 10, 10, .75);
+                padding: 1em 0;
+                p{
+                    font-family: "Oswald";
+                    width: 100%;
+                    height: fit-content;
+                    text-align: center;
+                    margin: 2em 1em 0 1em;
+                    background: u.$white;
+                    color: u.$black;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                }
+                a{
+                    color: u.$white;
+                    text-decoration: none;
+                    padding: .5em;
+                    font-family: 'KollektifBold';
+                    box-shadow: inset 0 0 0 0 u.$black;
+                    transition: ease-out .4s;
+                    width: 100px;
+                    height: fit-content;
+                    text-align: center;
+                    border: 2px solid u.$white;
+                    background-color: u.$black;
+                    &:hover{
+                        box-shadow: inset 100px 0 0 0 u.$white;
+                        color: u.$black;
+                        background-color: u.$black;
+                        // border: 2px solid u.$white;
+                        transition: ease-out .4s;
+                    }
+                }
+            }
+        }
+    }
+}

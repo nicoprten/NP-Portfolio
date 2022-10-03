@@ -20,6 +20,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+#root{
+    overflow-y: hidden;
+}
 body{
     background-color: u.$black;
     width: 100%;
