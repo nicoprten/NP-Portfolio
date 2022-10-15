@@ -21,7 +21,15 @@
     box-sizing: border-box;
 }
 #root{
+    width: 60vw;
+    margin: 0 auto;
     overflow-y: hidden;
+    @include u.tablet{
+        width: 80vw;
+    }
+    @include u.mobile{
+        width: 100vw;
+    }
 }
 body{
     background-color: u.$black;
@@ -39,7 +47,7 @@ body{
     }
 }
 .video-bg{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
