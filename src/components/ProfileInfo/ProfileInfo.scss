@@ -11,20 +11,22 @@
     animation: fadeInAnimation 0.5s linear;
     @include u.mobile{
         margin: 0.5em 1em;
+        padding: 2em 0;
         flex-wrap: wrap;
-        align-items: flex-start;
-        width: 80vw;
+        width: 90vw;
         height: 710px;
     }
     .profile-info{
         display: flex;
         flex-direction: column;
         gap: 1em;
-        align-items: flex-end;
+        background-color: rgba(0, 0, 0, .8);
+        border-radius: 0 10px 10px 0;
+        padding: 1em 2em;
         animation: fadeInLeftBig;
         animation-duration: .5s;
         @include u.mobile{
-            align-items: flex-start;
+            padding: 1em 0 1em 2em;
         }
         h1{
             color: u.$red;
@@ -41,11 +43,13 @@
         }
         p{
             color: u.$white;
-            width: 250px;
             font-family: 'Kollektif';
             line-height: 25px;
             padding: 1em;
             border-bottom: 5px solid u.$white;
+            &:last-child{
+                border: none;
+            }
             span{
                 color: u.$black;
                 padding: .3em .2em;
@@ -58,6 +62,7 @@
         padding: 1em 0;
         animation: fadeInLeftBig;
         animation-duration: .5s;
+        // margin-left: 2em;
         @include u.mobile{
             
         }

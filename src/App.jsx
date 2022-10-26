@@ -20,13 +20,13 @@ export default function App(){
             <Menu handleToggle={handleToggle} view={view} />
             {view === 'active' ? <ProfileInfo /> : <Projects />}
             <SocialLinks />
-            <img id='ball01' src='./ball-01.png' alt='ball to animate' />
+            {/* <img id='ball01' src='./ball-01.png' alt='ball to animate' />
             <img id='ball02' src='./ball-02.png' alt='ball to animate' />
             <img id='ball03' src='./ball-03.png' alt='ball to animate' />
-            <img id='ball04' src='./ball-01.png' alt='ball to animate' />
-            {/* <video className="video-bg" autoplay='true' loop muted>
+            <img id='ball04' src='./ball-01.png' alt='ball to animate' /> */}
+            <video className="video-bg" autoplay='true' loop muted>
                 <source src='./bg-waves.mp4' />
-            </video> */}
+            </video>
         </>
     )
 }
