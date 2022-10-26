@@ -21,12 +21,10 @@
         position: inherit;
     }
     li{
-        border-bottom: 5px solid u.$white;
-        margin-top: 5px;
         transition: ease-out .3s;
+        margin-top: 5px;
         &:hover{
             margin-top: 0;
-            border-bottom: 10px solid u.$black;
             transition: ease-out .3s;
         }
         @include u.mobile{
