@@ -11,9 +11,9 @@ export default function Projects({ menuActive }){
             {projects && projects.map((p, i) => {
                 return(
                     <li key={i}>
-                        <h3>{p.name.toUpperCase()}</h3>
                         <img src={p.img} alt={`image of my project ${p.name}`} />
                         <div className='container-code'>
+                            <h3>{p.name.toUpperCase()}</h3>
                             <p>{p.desc}</p>
                             <a href={p.code} target="_blank">CODE</a>
                             <a href={p.deploy} target="_blank">DEPLOY</a>

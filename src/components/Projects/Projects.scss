@@ -6,6 +6,11 @@
     animation: fadeInAnimation .4s linear;
     color: u.$white;
     margin: 0 auto;
+    height: 75vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     @include u.tablet{
         width: 70%;
     }
@@ -26,77 +31,79 @@
         }
     }
     .projects-container{
-        color: u.$white;
-        list-style-type: none;
         display: flex;
-        gap: 1em;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        color: u.$white;
+        list-style-type: none;
+        gap: 1em;
         animation: backInRight;
         animation-duration: 1s;
-        height: 70vh;
-        overflow-y: scroll;
-        @include u.mobile{
+        @include u.tablet{
             gap: 0;
         }
-        &::-webkit-scrollbar{
-            display: none;
-        }
         li{
+            display: flex;
+            align-items: flex-start;
             position: relative;
-            border-radius: 5px;
-            border: 2px solid u.$red;
-            width: 45%;
-            overflow: hidden;
-            @include u.mobile{
+            border-top: 2px solid u.$red;
+            border-bottom: 2px solid u.$red;
+            @include u.tablet{
                 width: 100%;
                 border: none;
-                border-radius: 0;
             }
-            &:hover .container-code{
-                opacity: 1;
-                transition: .3s;
-            }
-            h3{
-                font-family: 'Oswald';
-                text-align: center;
-                background-color: u.$black;
-                padding: .5em;
-                color: u.$red;
-                border-bottom: 2px solid u.$red;
-                @include u.mobile{
-                    border: none;
-                    background-color: u.$red;
-                    color: u.$black;
+            // &:hover .container-code{
+            //     opacity: 1;
+            //     transition: .3s;
+            // }
+            img{
+                width: 50%;
+                @include u.tablet{
+                    width: 100%;
                 }
             }
-            img{
-                width: 100%;
-            }
             .container-code{
-                transition: .3s;
-                opacity: 0;
-                position: absolute;
-                bottom: 0;
                 display: flex;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-                width: 100%;
-                height: 100%;
+                flex-direction: column;
+                gap: 1em;
                 background-color: rgba(10, 10, 10, .75);
-                padding: 1em 0;
+                width: 100%;
+                padding-left: 1em;
+                @include u.tablet{
+                    flex-direction: row;
+                    padding: 0;
+                    position: absolute;
+                    height: 100%;
+                    border-top: 2px solid u.$white;
+                }
+                h3{
+                    font-family: 'Oswald';
+                    text-align: center;
+                    background-color: u.$black;
+                    padding: .5em;
+                    width: 100%;
+                    color: u.$red;
+                    border-bottom: 2px solid u.$red;
+                    @include u.tablet{
+                        border: none;
+                        background-color: transparent;
+                        color: u.$white;
+                    }
+                }
                 p{
                     font-family: "Oswald";
                     width: 100%;
                     height: fit-content;
-                    text-align: center;
-                    margin: 2em 1em 0 1em;
-                    background: u.$white;
-                    color: u.$black;
-                    padding: 0.5em;
-                    border-radius: 5px;
+                    text-align: left;
+                    color: u.$white;
+                    padding-right: 1em;
+                    @include u.tablet{
+                        text-align: center;
+                        padding: 0 1em;
+                    }
                 }
                 a{
                     color: u.$white;
@@ -114,7 +121,6 @@
                         box-shadow: inset 100px 0 0 0 u.$white;
                         color: u.$black;
                         background-color: u.$black;
-                        // border: 2px solid u.$white;
                         transition: ease-out .4s;
                     }
                 }
