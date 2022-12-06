@@ -53,10 +53,10 @@
                 width: 100%;
                 border: none;
             }
-            // &:hover .container-code{
-            //     opacity: 1;
-            //     transition: .3s;
-            // }
+            @include u.mobile{
+                height: 250px;
+                overflow: hidden;
+            }
             img{
                 width: 50%;
                 @include u.tablet{
@@ -69,7 +69,6 @@
                 flex-wrap: wrap;
                 flex-direction: column;
                 gap: 1em;
-                background-color: rgba(10, 10, 10, .75);
                 width: 100%;
                 padding-left: 1em;
                 @include u.tablet{
@@ -78,6 +77,9 @@
                     position: absolute;
                     height: 100%;
                     border-top: 2px solid u.$white;
+                }
+                @include u.mobile{
+                    background-color: rgba(10, 10, 10, .75);
                 }
                 h3{
                     font-family: 'Oswald';

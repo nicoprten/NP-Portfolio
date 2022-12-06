@@ -16,7 +16,7 @@ export default function ProfileInfo(){
             </div>
             <div className='container-button'>
                 {showResumes ?
-                    <div onClick={() => setShowResumes(!showResumes)}>
+                    <div className='container-buttons-languages' onClick={() => setShowResumes(!showResumes)}>
                         <button onClick={() => window.open('./resume-nicolas-prtenjaca.pdf')}>ENGLISH</button>
                         <button onClick={() => window.open('./cv-nicolas-prtenjaca.pdf')}>SPANISH</button>
                     </div>
